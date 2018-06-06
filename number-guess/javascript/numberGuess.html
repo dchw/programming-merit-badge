@@ -77,11 +77,9 @@
         } else {
           lastResult.textContent = 'Wrong!';
           lastResult.style.backgroundColor = 'red';
-          if(userGuess < randomNumber) {
-            lowOrHi.textContent = 'Last guess was too low!';
-          } else if(userGuess > randomNumber) {
-            lowOrHi.textContent = 'Last guess was too high!';
-          }
+          
+          // TODO Lets make it so that the program tells us if the guess is too high or too low.
+          lowOrHi.textContent = "WRONG!!!"
         }
 
         guessCount++;
